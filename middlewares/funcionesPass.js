@@ -3,9 +3,7 @@ const { Model } = require("firebase-admin/machine-learning");
 
 function encryptPass(password){
     var salt=crypto.randomBytes(32).toString("hex");
-    //console.log(salt);
     const hash=crypto.scryptSync(password,salt,100000,64,"sha512").toString("hex");
-    //console.log(hash);
     return {
         salt,
         hash
@@ -33,4 +31,3 @@ module.exports={
     usuarioAuto,
     adminAuto
 }
-//encryptPass("hola");

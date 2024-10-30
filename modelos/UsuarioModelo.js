@@ -30,7 +30,6 @@ class Usuario{
     set tipoUsuario(tipoUsuario){
         this._tipoUsuario=tipoUsuario;
     }
-
     get id(){
         return this._id;
     }

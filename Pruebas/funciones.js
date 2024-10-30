@@ -12,7 +12,7 @@ function saludar3(nombre="anonimo") {
     var s = "Hola " + nombre;
     return s;
 }
-console.log(saludar3("Santiago"));
+console.log(saludar3("Aldo"));
 
 //Función de flecha
 var saludo=(nombre)=>{
@@ -32,7 +32,7 @@ var saludo3=(nombre)=>{
 console.log(saludo3("Ana"));
 
 var saludo4=nombre=>"Hola "+nombre;
-console.log(saludo4("Martin"));
+console.log(saludo4("Joss"));
 
 console.log((nombre="anonimo")=>"Hola "+nombre);
 
